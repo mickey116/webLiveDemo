@@ -1,0 +1,166 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300;400;500&display=swap');
+
+// color
+
+$spanRed:#A00404;
+$bgColor: #415165;
+
+// space
+
+$spacer:16px;
+
+$spacers: ("1": $spacer,
+  "2": $spacer * 1.25,
+  "3": $spacer * 1.5,
+  "4": $spacer * 3,
+  "5": $spacer * 4.5,
+);
+
+
+@each $num,
+$val in $spacers {
+  .m {
+    &r-#{$num} {
+      margin-right: $val;
+    }
+
+    &b-#{$num} {
+      margin-bottom: $val;
+    }
+  }
+
+  .p {
+    &l-#{$num} {
+      padding-left: $val;
+    }
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &-dark {
+    max-width: 996px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 36px;
+  }
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &-light {
+    font-weight: 300;
+  }
+
+  &-medium {
+    font-weight: 500;
+  }
+
+  &-s {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &-m {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &-white {
+    color: white;
+  }
+
+}
+
+.bg {
+  &-dark {
+    background: $bgColor;
+    color: white;
+  }
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 94px;
+  border-bottom: 1px solid black;
+  padding-bottom: 17px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 43px;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+
+  span {
+    font-size: 24px;
+    line-height: 28px;
+    color: $spanRed;
+    margin-left: 16px;
+  }
+}
+
+.skillsInner {
+
+  h2 {
+    border-bottom: 1px solid white;
+  }
+
+  ul {
+    width: 250px;
+    margin: 0 auto;
+    border-left: 1px solid white;
+  }
+}
+
+.experience {
+  padding: 72px 0;
+
+  ul {
+    max-width: 660px;
+    margin-left: 24px;
+    border-left: 1px solid black;
+
+    img {
+      margin: 8px 0;
+    }
+
+    li {
+      margin-bottom: 24px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+}
+
+footer {
+  h2{
+    border-bottom: 1px solid white;
+  }
+  a{
+    color:white;
+    &:hover{
+      border-bottom: 1px solid white;
+    }
+  }
+  ul{
+    li{
+      margin-bottom: 16px;
+    }
+  }
+}
