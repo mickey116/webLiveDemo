@@ -137,6 +137,7 @@ table {
 img {
   max-width: 100%;
   height: auto;
+  display:block;
 }
 
 *,
@@ -146,5 +147,6 @@ img {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }

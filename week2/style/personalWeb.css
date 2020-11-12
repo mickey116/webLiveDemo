@@ -137,6 +137,7 @@ table {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 *,
@@ -146,6 +147,7 @@ img {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 
@@ -421,6 +423,11 @@ h2 {
   padding-bottom: 56px;
 }
 
+.about img {
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
 .about .profile {
   margin: 0 auto;
   padding-bottom: 24px;
@@ -472,5 +479,14 @@ h2 {
 
 .works {
   padding: 60px 0 160px;
+}
+
+footer a {
+  display: inline-block;
+  color: white;
+}
+
+footer a:hover {
+  border-bottom: 1px solid #fff;
 }
 /*# sourceMappingURL=personalWeb.css.map */

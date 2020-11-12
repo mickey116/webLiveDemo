@@ -3,7 +3,7 @@
 
 // color
 
-$spanRed:#A00404;
+$red:#A00404;
 $bgColor: #415165;
 
 // space
@@ -107,7 +107,7 @@ h2 {
   span {
     font-size: 24px;
     line-height: 28px;
-    color: $spanRed;
+    color: $red;
     margin-left: 16px;
   }
 }
@@ -153,6 +153,7 @@ footer {
     border-bottom: 1px solid white;
   }
   a{
+    display:inline-block;
     color:white;
     &:hover{
       border-bottom: 1px solid white;

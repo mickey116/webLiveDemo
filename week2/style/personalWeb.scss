@@ -182,7 +182,10 @@ h2 {
 .about {
   padding-top: 64px;
   padding-bottom: 56px;
-
+  img{
+    margin:0 auto;
+    margin-bottom: 24px;
+  }
   .profile {
     // width: 450px;
     margin: 0 auto;
@@ -239,5 +242,14 @@ h2 {
 
 .works {
   padding: 60px 0 160px;
+}
 
+footer{
+  a{
+    display: inline-block;
+    color:white;
+    &:hover{
+      border-bottom: 1px solid $light;
+    }
+  }
 }

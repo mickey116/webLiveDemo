@@ -146,6 +146,7 @@ img {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 
@@ -315,6 +316,7 @@ footer h2 {
 }
 
 footer a {
+  display: inline-block;
   color: white;
 }
 
