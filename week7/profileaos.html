@@ -4,31 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>個人履歷</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./style/all.css">
 </head>
 <body>
-  <header class="container">
-    <h1 class="mb-4">Joanne <br>Chen</h1>
+  <header class="container" data-aos="fade-down">
+    <h1 class="mb-4" >Joanne <br>Chen</h1>
     <img src="./images/photo.png" alt="avatar" class="mb-4">
   </header>
   <div class="main">
-    <div class="profile container">
-      <h2 class="title">個人資料<span>PROFILE</span></h2>
-      <p class="mb-3 text-m">
-            陳久安 Joanne Chen 1997- <br>應屆畢業生／接案設計師／UI 設計實習生
-          </p>
-          <p class="mb-5 text-m">UI 設計修行中／立志當斜槓青年 <br>獨立接案，內容涵蓋： <br>品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。</p>
+    <div class="profile container" >
+      <h2 class="title" data-aos="fade-up" data-aos-offset="200">個人資料<span>PROFILE</span></h2>
+      <p class="text-m mb-3" data-aos="fade-up" data-aos-offset="200">
+        陳久安 Joanne Chen 1997- <br>應屆畢業生／接案設計師／UI 設計實習生
+      </p>
+      <p class="text-m mb-5" data-aos="fade-up" data-aos-offset="200">
+        UI 設計修行中／立志當斜槓青年 <br>獨立接案，內容涵蓋： <br>品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。</p>
     </div>
     <div class="education container">
-      <h2 class="title">學歷<span>EDUCATION</span></h2>
-        <ul class="text-m">
+      <h2 class="title" data-aos="fade-up" data-aos-offset="200">學歷<span>EDUCATION</span></h2>
+        <ul class="text-m" data-aos="fade-up" data-aos-offset="200">
           <li class="mb-3">國立六腳高級中學 美術班 | 2013－2016</li>
           <li class="mb-5">
             國立六角師範大學 視覺設計學系 學士學位 | 2016－2020 
           </li>
         </ul>
     </div>
-    <div class="skills bg-dark">
+    <div class="skills bg-dark" data-aos="zoom-in">
       <div class="skillsInner container-dark">
         <h2 class="title text-center">技能<span class="text-white">SKILLS</span></h2>
         <ul class="text-m text-light text-white pl-3">
@@ -43,8 +45,8 @@
       </div>
     </div>
     <div class="experience container">
-      <h2 class="title">工作經驗<span>WORK EXPERIENCE</span></h2>
-      <ul class="text-m pl-3">
+      <h2 class="title" data-aos="fade-up" data-aos-offset="200">工作經驗<span>WORK EXPERIENCE</span></h2>
+      <ul class="text-m pl-3" data-aos="fade-up" data-aos-offset="200">
         <li>
           <p>六角學院 視覺設計實習生 | 2019/07－2020/06</p>
           <img src="./images/Group 1.svg" alt="logo">
@@ -68,7 +70,7 @@
       </ul>
     </div>
   </div>
-  <footer class="bg-dark text-center">
+  <footer class="bg-dark text-center"  data-aos="fade-up">
     <div class="contact container-dark">
       <h2 class="title">聯絡方式<span class="text-white">CONTACT METHOD</span></h2>
       <ul class="text-m text-light">
@@ -93,5 +95,9 @@
       </ul>
     </div>
   </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
